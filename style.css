@@ -203,7 +203,36 @@ ol {
     color: #D3AF37;
 }
 
-  
+.badge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(6, auto);   /* 6 rows */
+  gap: 12px;
+  margin-top: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.badge-grid a {
+  display: inline-block;
+  background: #1f1f1f;
+  padding: 6px;
+  border-radius: 10px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.badge-grid a:hover {
+  transform: scale(1.1);
+  background: #2d2d2d;
+}
+
+.badge-grid img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+  border-radius: 6px;
+}
 
 /*-------------------services-----------------------*/
 
